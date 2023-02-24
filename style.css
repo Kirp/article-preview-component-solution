@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Manrope;
+    src: url(./fonts/Manrope-Regular.ttf);
+}
+
+:root {
+    --very_dark_grayish_blue: hsl(217, 19%, 35%);
+    --desaturated_dark_blue: hsl(214, 17%, 51%);
+    --grayish_blue: hsl(212, 23%, 69%);
+    --grayish_blue_transparent: hsla(212, 23%, 69%, 40%);
+    --light_grayish_blue: hsl(210, 46%, 95%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Manrope;
+    font-size: 13px;
+    background-color: var(--grayish_blue);
+}
+
+.wrapper {
+    width: 100vw;
+    width: 100svw;
+    height: 100vh;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 25em;
+    position: relative;
+    background-color: var(--light_grayish_blue);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-picture img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-text {
+    padding: 1em 2em;
+    padding-bottom: 0;
+}
+
+.h1-text {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+.p-text {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 2em;
+    opacity: .65;
+}
+
+.id-social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.id-picture {
+    width: 3.5em;
+}
+
+.id-picture img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.id-name {
+    padding-left: 1em;
+    font-size: 1.1em;
+}
+
+.bold-name {
+    font-weight: 700;
+}
+
+.id-name-date {
+    opacity: .65;
+}
+
+.social-links {
+    display: flex;
+    background-color: var(--very_dark_grayish_blue);
+    width: 25em;
+    height: 5.5em;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    border-radius: 0 0 15px 15px;
+    bottom: -5.5em;
+    transition: bottom .25s;
+}
+
+.social-links p {
+    text-transform:uppercase;
+    letter-spacing: .5em;
+    font-weight: 500;
+    color: var(--grayish_blue);
+    padding-left: 2em;
+}
+
+.social-links a {
+    margin: 0 .75em;
+}
+
+
+.switcher-button {
+
+    background-color: var(--grayish_blue_transparent);
+
+    /* for showing */
+    /* background-color: var(--grayish_blue); */
+
+    border-radius: 50%;
+    mask-image: url(./images/icon-share.svg);
+    mask-size: 100%;
+    position: absolute;
+    right: 2.5em;
+    bottom: 1.5em;
+    transition: rotate .5s;
+}
+
+.switcher-button img {
+    padding: .75em;
+    /* filter: brightness(0) saturate(100%) invert(97%) sepia(11%) saturate(87%) hue-rotate(303deg) brightness(115%) contrast(100%); */
+    filter: none;
+    cursor: pointer;
+    transition: filter .5s;
+}
+
+
+
